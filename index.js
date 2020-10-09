@@ -1,13 +1,15 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+require('dotenv').config();
+
 client.once('ready', () => {
 	console.log('Ready!');
 });
 
 client.login(process.env.BOT_TOKEN);
 
-// NzY0MjMyMTg2ODUyNDA5Mzc0.X4DQsA.kFKdXM2-rH71AY7X9fG2Vvfi00s
+
 
 const answers = [
     ' is reaching critical sus. Immediete vote recomended.',
