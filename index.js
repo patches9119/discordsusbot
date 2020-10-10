@@ -14,7 +14,6 @@ client.login(process.env.BOT_TOKEN);
 
 
 client.on('message', message => {
-	console.log(message.content);
     if (message.content.includes('!sus')) {
         var response = message.content.slice(4);
         var answers = [
@@ -24,7 +23,7 @@ client.on('message', message => {
             response + ' took a little too long on trash.',
             response + ' is sus.',
             response + ' hasn\'t been on cams all round.',
-            response + ' did medscan.'
+            response + ' did medscan.',
         ]
         var tag = answers[Math.floor(Math.random() * 8)];
         message.channel.send(tag);
