@@ -1,4 +1,4 @@
-# discordsusbot 
+# Sus Bot for Discord
 ![image](https://user-images.githubusercontent.com/67241239/95657672-9ab29b00-0aca-11eb-8390-43790f2614fb.png)
 
 ## Description
