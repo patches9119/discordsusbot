@@ -11,23 +11,22 @@ client.login(process.env.BOT_TOKEN);
 
 
 
-const answers = [
-    ' is reaching critical sus. Immediete vote recomended.',
-    ' is extremely sus.',
-    ' probably vented.',
-    ' took a little too long on trash.',
-    ' is sus',
-    ' has not been in range of cams for me to see.',
-    ' isn\'t very sus.',
-    ' did medscan.'
-]
+
 
 client.on('message', message => {
 	console.log(message.content);
     if (message.content.includes('!sus')) {
-        // send back "Pong." to the channel the message was sent in
         var response = message.content.slice(4);
+        var answers = [
+            response + ' literally kill green in front of me.',
+            response + ' probably faked upload.',
+            response + ' probably vented.',
+            response + ' took a little too long on trash.',
+            response + ' is sus.',
+            response + ' hasn\'t been on cams for me to see.',
+            response + ' did medscan.'
+        ]
         var tag = answers[Math.floor(Math.random() * 8)];
-        message.channel.send(response + tag);
+        message.channel.send(tag);
     }
 });
