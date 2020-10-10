@@ -26,7 +26,6 @@ const answers = [
 client.on('message', message => {
     if (!message.content.startsWith('!sus') || message.author.bot) return;
     const args = message.content.slice(4).trim();
-    const command = args.toLowerCase();
     var tag = answers[Math.floor(Math.random() * 8)];
-    message.channel.send(command + tag);
+    message.channel.send(args + tag);
 });
