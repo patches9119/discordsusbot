@@ -27,7 +27,7 @@ client.on('message', message => {
     if (message.content.includes('!sus')) {
         // send back "Pong." to the channel the message was sent in
         var response = message.content.slice(4);
-        var tag = answers[Math.floor(Math.random() * 9)];
+        var tag = answers[Math.floor(Math.random() * 8)];
         message.channel.send(response + tag);
     }
 });
