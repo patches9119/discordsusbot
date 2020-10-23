@@ -1,3 +1,4 @@
 {
-    "prefix": "!susbot"
+    "prefix": "!susbot",
+    "token": "your-token-goes-here"
 }

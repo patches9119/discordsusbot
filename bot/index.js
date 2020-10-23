@@ -52,5 +52,19 @@ client.on('message', message => {
 		}
 	} else if (args.startsWith("task")) {
 		message.channel.send(tasks[Math.floor(Math.random() * 8)]);
+	} else if (args.startsWith("help")) {
+		message.channel.send("Commands availible in version 0.2.0:");
+		message.channel.send("\`\'!susbot sus [target]\' - Generates a basic statement towards the target.\`");
+		message.channel.send("\`\'!susbot task\' - Generates a random excuse.\`");
+		message.channel.send("\`\'!susbot vote [option1],[option2],[option3],...\' - Will return a random option given the choices. All choices must be seperated by commas.\`");
+		message.channel.send("\`\'!susbot help\' - Gives list of availible commands.\`");
+	} else if( args.startsWith("vote")) {
+		var base = args.slice(4).trim();
+		var options = base.split(',');
+		// console.log(options);
+		var num = Math.floor(Math.random() * options.length)
+		var choice = options[num].trim();
+		// console.log(choice);
+		message.channel.send("Vote " + choice);
 	}
 });
