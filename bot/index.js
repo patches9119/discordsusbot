@@ -66,5 +66,7 @@ client.on('message', message => {
 		var choice = options[num].trim();
 		// console.log(choice);
 		message.channel.send("Vote " + choice);
+	} else {
+		message.channel.send("Command not recognized.")
 	}
 });
