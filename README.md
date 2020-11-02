@@ -24,4 +24,5 @@ This command will return a random option and tell you what to vote for.
 ```
 This will display a list of all availible commands.
 ## Invite Link
-Use this link to add it to your server: https://discord.com/api/oauth2/authorize?client_id=764232186852409374&permissions=3072&scope=bot
+Use this link to add it to your server: <a href="https://discord.com/api/oauth2/authorize?client_id=764232186852409374&permissions=3072&scope=bot" target="_blank">Click Here</a>
+
